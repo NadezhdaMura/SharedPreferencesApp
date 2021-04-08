@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/et_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:hint="Your first word"
+        android:maxLength="8"
+        android:textSize="16sp"
+        android:textStyle="italic" />
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_text"
+        android:layout_centerInParent="true"
+        android:text="Only eight characters"
+        android:textSize="16sp"/>
+    <EditText
+        android:id="@+id/et_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:maxLength="8"
+        android:layout_below="@id/et_text"
+        android:hint="Your second word"
+        android:textSize="16sp"
+        android:textStyle="italic" />
+    <TextView
+        android:id="@+id/tv_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_text1"
+        android:layout_centerInParent="true"
+        android:text="Only eight characters"
+        android:textSize="16sp"/>
+    <EditText
+        android:id="@+id/et_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLength="8"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/et_text1"
+        android:hint="Tour third word"
+        android:textSize="16sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/tv_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_text2"
+        android:layout_centerInParent="true"
+        android:text="Only eight characters"
+        android:textSize="16sp"/>
+    <Button
+        android:id="@+id/bt_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_text2"
+        android:layout_centerInParent="true"
+        android:text="Save"/>
+
+</RelativeLayout>
